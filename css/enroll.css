@@ -1,0 +1,119 @@
+.enroll{
+	width: 1190px;
+	height: 620px;
+	/* background-color: red; */
+	margin: 24px auto 0;
+	position: relative;
+}
+#activity{
+	position: absolute;
+	right: 520px;
+	top: 66px;
+	width: 560px;
+	height: 485px;
+	line-height: 485px;
+	/* display: table-cell; */
+}
+#activity img{
+	margin: auto;
+	vertical-align: middle;
+}
+.enroll_wrap{
+	position: absolute;
+	top: 88px;
+	right: 0;
+	float: right;
+	width: 300px;
+	padding: 29px 38px 38px;
+	margin: 66px 100px 0 0;
+	background-color: #FFFFFF;
+	border: 1px solid #d6d6d6;
+	box-shadow: 0 0 4px 0 #d6d6d6;
+	border-radius: 2px;
+}
+.enroll_wrap input{
+	display: block;
+	line-height: 38px;
+	width: 288px;
+	height: 38px;
+	border: 1px solid #c8c8c8;
+	border-radius: 2px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	outline: none;
+	z-index: 10;
+}
+
+.enroll_wrap .enroll_title{
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+.enroll_wrap .enroll_phone{
+	border: 1px solid #d6d6d6;
+	width: 100%;
+	font-size: 12px;
+}
+.enroll_wrap .error{
+	color: #FF0000;
+	font-size: 12px;
+	margin-top: 10px;
+	display: none;
+}
+.error04{
+	color: red;
+	margin-top: 10px;
+	/* display: block; */
+}
+.enroll_wrap .enroll_pwd{
+	padding-left: 10px;
+	border: 1px solid #d6d6d6;
+	width: 100%;
+	outline: none;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.enroll_wrap .hint{
+	color: #808080;
+	margin-top: 10px;
+	display: block;
+}
+.enroll_wrap .enter{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #0092d8;
+	margin: 20px 0 17px 0;
+	outline: none;
+	cursor: pointer;
+	border: 0;
+	text-align: center;
+	transition: all .2s ease-in-out;
+}
+.enroll_wrap .enter:hover{
+	background-color: #0078cf;
+}
+.enroll_wrap .enroll_foot{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.enroll_wrap .enroll_foot .enroll_foot_click{
+	float: right;
+	color: #0092D8;
+}
+.enroll_wrap .enroll_foot .enroll_foot_click:hover{
+	color: #f00;
+}
+.foot{
+	width: 90%;
+	border-top: 1px solid #e0e0e0;
+	margin: 0 auto 30px;
+	padding-top: 15px;
+	color: #999;
+	font-size: 12px;
+	line-height: 12px;
+	height: 12px;
+	font-family: '\5FAE\8F6F\96C5\9ED1';
+	text-align: center;
+}

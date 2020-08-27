@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/head.css">
+		<link rel="stylesheet" type="text/css" href="css/shoppingChat.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="head"></div>
+		<!-- 购物车 -->
+		<div class="chat">
+			<!-- 购物车头部 -->
+			<div class="chat_head">
+				<div class="head_inner">
+					<h3>购物车</h3>
+				</div>
+			</div>
+			<!-- 购物车内容 -->
+			<div class="chat_detail">
+				<ul class="chat_title_wrap">
+					<li class="chat_choose">
+						<div class="item_choose_wrap">
+							<div class="item_choose"></div>
+						</div>
+						全选
+					</li>
+					<li class="chat_product">商品信息</li>
+					<li class="chat_sku">规格</li>
+					<li class="chat_price">单价(元)</li>
+					<li class="chat_num">数量</li>
+					<li class="chat_total">小计(元)</li>
+					<li class="chat_operation">操作</li>
+				</ul>
+			</div>
+			<div class="cart_list"></div>
+			<!-- <div class="chat_list">
+				<div class="item_title">
+					<div class="item_choose_wrap">
+						<div class="item_choose"></div>
+					</div>
+					<div class="shop_detail">
+						<i class="icon_shop"></i>
+						小天鹅官方商城
+					</div>
+				</div> -->
+				<!-- <div class="item_list"> -->
+					<!-- 点击按钮 -->
+					<!-- <div class="item_choose_wrap">
+						<div class="item_choose"></div>
+					</div>
+					<div class="chat_img">
+						<img src="" class="chat_imgg">
+					</div>
+					<div class="chat_product chat_product_02"></div>
+					<div class="chat_sku">
+						<span class="chat_sku_01"></span>
+						<span class="chat_sku_02"></span>
+					</div>
+					<div class="chat_price">
+						<p></p>
+					</div>
+					<div class="chat_btn">
+						<span class="min">
+							<i class="inner"></i>
+						</span>
+						<input type="text" class="num">
+						<span class="plus">
+							<i class="inner"></i>
+						</span>
+					</div>
+					<div class="chat_total chat_total_h"></div>
+					<div class="chat_del">删除</div>
+				</div>
+			</div> -->
+			<div class="chat_body">
+				<div class="chat_icon"></div>
+				<div class="chat_text">您的购物车还是空的，去看看心仪的商品吧~</div>
+				<div class="chat_btn">
+					<a href="goodsOfList.html">去购物</a>
+					<a href="#">去收藏夹</a>
+				</div>
+				
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer"></div>
+		<div class="cart_bottom cart_ww">
+			<div class="cart_fixed">
+				<div class="heji">
+					<div class="heji01">合计：</div>
+					<span class="heji02"></span>
+					<div class="dian">去结算</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jQuery.js"></script>
+<script src="js/shoppingChat.js"></script>
+<script>
+	$(function(){
+		$(".head").load("head.html");
+		$(".footer").load("foot.html");
+	});
+</script>

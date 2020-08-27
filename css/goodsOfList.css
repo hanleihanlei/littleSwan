@@ -1,0 +1,234 @@
+/* 列表页面 */
+.goodsList{
+	width: 100%;
+	/* height: 1000px; */
+	border-bottom: 1px solid #eaeaea;
+}
+/* 列表顶部 */
+.list_top{
+	border-bottom: 1px solid #eee;
+	/* height: 200px; */
+}
+.top_bar{
+	width: 1190px;
+	margin: 0 auto;
+	font: 12px/1.5 'Lucida Grande', Arial, '\5FAE\8F6F\96C5\9ED1', '\5b8b\4f53';
+	height: 40px;
+	line-height: 40px;
+}
+.top_bar a{
+	color: #666;
+	line-height: 40px;
+	float: left;
+}
+.top_bar i{
+	background: url(../images/imgDetails/headJump01.png) no-repeat -20px -20px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 5px;
+	float: left;
+	position: relative;
+	top: 9px;
+}
+/* 列表头部 */
+.list_head{
+	width: 100%;
+}
+.part{
+	width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+.part .part_left{
+	position: relative;
+	display: block;
+	width: 382px;
+	height: 284px;
+	float: left;
+	border: 1px solid #eee;
+	margin-top: 30px;
+}
+.part .part_left img{
+	width: 282px;
+	height: 282px;
+	display: block;
+	margin-left: 50px;
+}
+.part .part_right{
+	width: 765px;
+	float: right;
+	position: relative;
+}
+.part .part_right img{
+	width: 51px;
+	height: 61px;
+	display: block;
+}
+.part .part_right h3{
+	padding-top: 25px;
+	font-size: 30px;
+	color: #333;
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+}
+.part .part_right .pp01{
+	font-size: 14px;
+	color: #666;
+	margin: 18px 0 40px 0;
+	width: 624px;
+	height: 36px;
+}
+.part .part_right .part_right_bottom{
+	margin-top: 20px;
+}
+.part .part_right .part_right_bottom .pp02{
+	color: #f60;
+	font-size: 30px;
+	font-weight: 600;
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+}
+.part .part_right .part_right_bottom a{
+	display: block;
+	background-color: #f60;
+	color: #fff;
+	width: 260px;
+	height: 40px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+	margin: 18px 0 50px 0;
+}
+/* 列表标题 */
+.list_title{
+	width: 100%;
+	background-color: #f4f4f4;
+}
+.part_title{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 350px;
+	padding-top: 40px;
+	background-color: #f4f4f4;
+}
+.part_title .title_wrap .title_solid{
+	width: 450px;
+	height: 20px;
+	display: block;
+	float: left;
+	border-bottom: 1px solid #dbdbdb;
+	-webkit-box-sizing: border-box;
+}
+.part_title .title_wrap .main_title{
+	float: left;
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 30px;
+	color: #2b2b30;
+	white-space: nowrap;
+	word-break: keep-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.part_title .main_des{
+	display: block;
+	clear: both;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	width: 100%;
+	padding: 18px 0 40px 0;
+}
+/* 列表身体 */
+.list_body{
+	width: 100%;
+	background-color: #f4f4f4;
+}
+.list_content{
+	width: 1216px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+.list_content .list_items{
+	overflow: hidden;
+}
+.list_content .list_items li{
+	padding: 0 30px;
+    float: left;
+    background-color: #fff;
+    width: 228px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    height: 410px;
+    position: relative;
+}
+.list_content .list_items li a .item_img{
+	display: block;
+    width: 227px;
+    height: 227px;
+    position: relative;
+    margin: 30px 0;
+}
+.list_content .list_items li a .item_img img{
+	display: inline;
+	width: 227px;
+	height: 227px;
+}
+.list_content .list_items li a .item_text{
+	font-size: 14px;
+	margin-top: 30px;
+}
+.list_content .list_items li a .item_text .text_01{
+	display: block;
+	color: #333;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+.list_content .list_items li a .item_text .text_02{
+	display: block;
+	color: #999;
+	height: 35px;
+	line-height: 1.4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	margin: 8px 0 20px 0;
+}
+.list_content .list_items li a .item_price{
+	font-size: 16px;
+    color: #ff6600;
+    font-weight: bold;
+    height: 18px;
+    line-height: 18px;
+}
+.list_content .list_items li a .item_price p:nth-child(1){
+	float: left;
+	margin-right: 10px;
+	font-size: 13px;
+	color: #404040;
+	text-decoration: line-through;
+}
+.list_content .list_items li .price_down{
+	width: 90px;
+    height: 30px;
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}

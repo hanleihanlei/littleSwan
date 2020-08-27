@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+$myWidth: 1190px;
+$myHeight: 620px;
+.login{
+	width: $myWidth;
+	height: $myHeight;
+	// background-color: red;
+	margin: 24px auto 0;
+	position: relative;
+}
+
+$variable: absolute;
+$myRight: 520px;
+$myTop: 66px;
+$ver: middle;
+#activity{
+	position: #{$variable};
+	right: $myRight;
+	top: $myTop;
+	width: $myRight + 40px;
+	height: $myWidth/2 - 110px;
+	line-height: $myWidth/2 - 110px;
+	// display: table-cell;
+	img{
+		margin: auto;
+		vertical-align: #{$ver};
+	}
+}
+
+$fontSize: 10px;
+@function fun($px){
+	@return $px * $fontSize;
+}
+$zero: 0;
+.login_wrap{
+	position: $variable;
+	top: fun(8) + 8px;
+	right: $zero;
+	float: right;
+	width: fun(30);
+	padding: fun(3)-1 fun(4)-2 fun(4)-2;
+	margin: fun(6)+6 fun(10) $zero $zero;
+	background-color: #fff;
+	border: fun(0.1) solid #666;
+	box-shadow: $zero $zero 4px $zero #d6d6d6;
+	border-radius: 2px;
+}
+
+.login_wrap input{
+	display: block;
+	line-height: fun(3) + 8px;
+	width: fun(29) - 2px;
+	height: fun(4) - 2px;
+	border: fun(0.1) solid #c8c8c8;
+	border-radius: fun(0.2);
+	box-sizing: border-box;
+}
+
+.login_wrap .login_title{
+	margin-top: fun(2);
+	margin-bottom: fun(1) + 5px;
+	font-size: fun(2);
+}
+
+.login_wrap .login_phone{
+	padding-left: fun(1);
+	border: fun(0.1) solid #d6d6d6;
+	width: 100%;
+	outline: none;
+	font-size: fun(1) + 2px;
+}
+
+.login_wrap .error{
+	color: #FF0000;
+	font-size: fun(1) + 2px;
+	margin-top: fun(1);
+	display: none;
+}
+
+.login_wrap .login_pwd{
+	padding-left: fun(1);
+	border: 1px solid #d6d6d6;
+	width: 100%;
+	outline: none;
+	margin-top: fun(1);
+	font-size: fun(1) + 2px;
+}
+
+.login_wrap .enter{
+	width: fun(30);
+	height: fun(4);
+	line-height: fun(4);
+	font-size: fun(1) + 2;
+	color: #fff;
+	background-color: #0092d8;
+	margin: 20px 0 17px 0;
+	outline: none;
+	cursor: pointer;
+	border: 0;
+	text-align: center;
+	transition: all .2s ease-in-out;
+}
+
+.login_wrap .enter:hover{
+	background-color: #0078cf;
+}
+.login_wrap .login_foot{
+	overflow: hidden;
+	margin-bottom: fun(1) + 5px;
+}
+.login_wrap .login_foot a:hover{
+	color: red;
+}
+.login_wrap .login_foot span:nth-child(2){
+	margin: 0 fun(2) - 5;
+}
+.login_wrap .login_foot a:nth-child(4){
+	float: right;
+}
+
+$myColor: #999 !default;
+.foot{
+	width: 90%;
+	border-top: fun(0.1) solid #e0e0e0;
+	margin: $zero auto fun(3);
+	padding-top: fun(1) + 5;
+	color: $myColor;
+	font-size: fun(1) + 2;
+	line-height: fun(2) - 8;
+	height: fun(1) + 2;
+	font-family: '\5FAE\8F6F\96C5\9ED1';
+	text-align: center;
+}

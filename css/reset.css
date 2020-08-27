@@ -1,0 +1,39 @@
+/* 重置样式表 */
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	display: block;
+}
+a,u{
+	text-decoration: none;
+	color: #888;
+}
+li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+	border: none;
+	/*IE浏览器里只要是超链接添加的图片都会出现边框*/
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+i,em{
+    fonr-style: normal;
+}
+/*万能清除法*/
+.clear: after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}

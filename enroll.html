@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/enroll.css"/>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header"></div>
+		<!-- 登录页面 -->
+		<div class="enroll">
+			<a href="#" id="activity">
+				<img src= "images/imgLogin/login01.jpg">
+			</a>
+			<div class="enroll_wrap">
+				<!-- <form action="php/enroll.php" method="post" id="enroll_form"> -->
+					<div class="enroll_title">注册账号</div>
+					<input type="text" name="username" placeholder="请输入手机号作为你的账号" class="enroll_phone"/>
+					<div class="error01 error">请输入正确的手机号</div>
+					<div class="error04 error">用户已存在,注册失败</div>
+					<input type="password" placeholder="密码" class="enroll_pwd enroll_pwd_01"/>
+					<div class="error02 error">请输入正确的密码格式</div>
+					<input type="password" name="userpwd" placeholder="确认密码" class="enroll_pwd enroll_pwd_02"/>
+					<!-- <div class="error03 error">请输入确认密码</div> -->
+					<div class="error03 error">两次输入的密码不一致</div>
+					<div class="hint error">密码由6-20位英文字母、数字或者下划线组成</div>
+					<!-- <input type="submit" value="注 册" class="enter"> -->
+					<input type="button" class="enter" value="注 册">
+					<div class="enroll_foot">
+						<a href="login.html" class="enroll_foot_click">已有账号? 请登录</a>
+					</div>
+				<!-- </form> -->
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="foot">
+			版权所有 © 无锡小天鹅股份有限公司|苏ICP备14025600号-1
+		</div>
+	</body>
+</html>
+<script src="js/jQuery.js"></script>
+<script src="js/enroll.js"></script>
+<script>
+	$(".header").load("head.html");
+</script>

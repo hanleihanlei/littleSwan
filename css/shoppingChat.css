@@ -1,0 +1,320 @@
+/* 购物车 */
+.chat{
+	width: 100%;
+	/* height: 1000px; */
+	background-color: #F4F4F4;
+	border-bottom: 1px solid #EAEAEA;
+}
+.chat_head{
+	border-bottom: 1px solid #e9e9e9;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+.chat_head .head_inner{
+	width: 1200px;
+	margin: 0 auto;
+}
+.chat_head h3{
+	font-size: 32px;
+	line-height: 80px;
+	color: #333;
+}
+.chat_body{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+	border: 1px solid #e6e6e6;
+	padding: 60px 0;
+}
+.chat_body .chat_icon{
+	background: url(../images/imgShoppingChat/chaticon01.png) no-repeat;
+	width: 84px;
+	height: 72px;
+	margin: 0 auto;
+}
+.chat_body .chat_text{
+	font-size: 14px;
+	line-height: 14px;
+	color: #999;
+	margin-top: 40px;
+}
+.chat_body .chat_btn{
+	margin-top: 20px;
+}
+.chat_body .chat_btn a:first-child{
+	margin-right: 5px;
+}
+.chat_body .chat_btn a{
+	font-size: 12px;
+	display: inline-block;
+	width: 88px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #c8c8c8;
+	margin-left: 5px;
+	color: #333;
+}
+
+/* 购物车中有商品时 */
+.chat_detail{
+	width: 1200px;
+	margin-bottom: 42px;
+	margin: 0 auto;
+}
+.chat_detail .chat_title_wrap{
+	border: 1px solid #e9e9e9;
+	background-color: #fafafa;
+	height: 40px;
+	line-height: 40px;
+	color: #aaa;
+}
+.chat_detail .chat_title_wrap li{
+	float: left;
+}
+.chat_detail .chat_title_wrap .chat_choose{
+	width: 114px;
+	padding: 0 10px 0 20px;
+	color: #333;
+}
+.chat_detail .chat_title_wrap .chat_choose .item_choose_wrap{
+	float: left;
+	margin: 13px 10px 0 0;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #c8c8c8;
+	position: relative;
+	background-color: #fff;
+	cursor: pointer;
+}
+.chat_detail .chat_title_wrap .chat_choose .item_choose_wrap .item_choose{
+	background: url(../images/imgShoppingChat/chaticon01.png) no-repeat;
+	background-position: -10px -90px;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	opacity: 0;
+}
+.chat_detail .chat_title_wrap .chat_product{
+	width: 315px;
+}
+.chat_detail .chat_title_wrap .chat_sku,.chat_detail .chat_title_wrap .chat_price,.chat_detail .chat_title_wrap .chat_num,.chat_detail .chat_title_wrap .chat_total{
+	width: 160px;
+}
+.chat_list{
+	width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	margin-bottom: 42px;
+}
+.chat_list .item_list{
+	height: 120px;
+	background-color: #fff;
+	line-height: 40px;
+	/* padding-left: 20px; */
+	box-sizing: border-box;
+	border-top: 1px solid #ccc;
+	/* background-color: #D6D6D6; */
+}
+.item_choose_wrap {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #c8c8c8;
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+}
+.chat_list .item_title{
+	padding-left: 20px;
+}
+.chat_list .item_title .item_choose_wrap{
+	float: left;
+	margin: 13px 10px 0 0;
+}
+.item_choose{
+	background: url(../images/imgShoppingChat/chaticon01.png) no-repeat;
+	background-position: -10px -90px;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	opacity: 0;
+}
+.chat_list .item_title .shop_detail{
+	margin-left: 24px;
+	padding: 9px 0;
+	line-height: 22px;
+	color: #333;
+}
+.chat_list .item_title .shop_detail i{
+	background: url(../images/imgShoppingChat/chaticon01.png) no-repeat;
+	background-position: 0 -74px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	position: relative;
+	top: 4px;
+}
+
+.item_list{
+	background-color: #fff;
+	height: 100px;
+	padding-left: 20px;
+}
+.item_list .item_choose_wrap{
+	float: left;
+	margin: 13px 10px 0 0;
+}
+.item_list .chat_img{
+	width: 90px;
+	float: left;
+	padding: 20px 0;
+}
+.item_list .chat_img img{
+	width: 78px;
+	height: 78px;
+	border: 1px solid #eee;
+}
+.item_list .chat_product{
+	width: 225px;
+	padding-right: 90px;
+	padding-left: 0;
+	font-size: 12px;
+	float: left;
+	padding: 20px 0;
+	line-height: 18px;
+	color: #333;
+	display: inline-block;
+}
+.item_list .chat_sku{
+	float: left;
+	padding: 20px 0;
+	width: 160px;
+	padding-left: 90px;
+}
+.item_list .chat_price{
+	width: 160px;
+	float: left;
+}
+.item_list .chat_price p{
+	font-weight: 1000;
+	line-height: 80px;
+	color: #333;
+}
+.item_list .chat_btn{
+	float: left;
+	padding: 20px 0;
+	width: 160px;
+	padding-top: 28px;
+}
+.item_list .chat_btn span{
+	width: 20px;
+	height: 20px;
+	float: left;
+	line-height: 28px;
+	border: 1px solid #d6d6d6;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.item_list .chat_btn span .inner{
+	background: url(../images/imgShoppingChat/hh.png) no-repeat;
+	width: 10px;
+    height: 10px;
+    top: 7px;
+    left: 7px;
+	position: absolute;
+}
+.item_list .chat_btn .min .inner{
+	background-position: -200px -100px;
+}
+.item_list .chat_btn .plus .inner{
+	background-position: -180px -100px;
+}
+
+.item_list .num{
+	height: 20px;
+    line-height: 20px;
+    width: 34px;
+	float: left;
+	text-align: center;
+	border: 1px solid #d6d6d6;
+	border-left: 0;
+	border-right: 0;
+	outline: none;
+}
+.item_list .chat_total{
+	float: left;
+	padding: 20px 0;
+	width: 160px;
+	font-weight: 800;
+	color: #f60;
+	font-size: 12px;
+}
+.item_list .chat_del{
+	float: left;
+	padding: 20px 0;
+	width: 90px;
+	color: #333;
+	padding-left: 10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.cart_bottom{
+	z-index: 20;
+	position: fixed;
+	bottom: -2px;
+	width: 1200px;
+}
+.cart_ww{
+	margin: 0 74px;
+}
+.cart_fixed{
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+	padding-left: 10px;
+	background-color: #fafafa;
+	border: 1px solid #e9e9e9;
+	position: relative;
+}
+.heji{
+	position: absolute;
+	right: 0;
+	top: 0;
+	float: right;
+}
+.heji .heji01{
+	line-height: 60px;
+	font-size: 12px;
+	float: left;
+}
+.heji .heji02{
+	color: #f60;
+	font-size: 18px;
+	line-height: 60px;
+	font-weight: blod;
+	float: left;
+}
+.dian{
+	width: 160px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 60px;
+	background-color: #f60;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	margin-left: 20px;
+}

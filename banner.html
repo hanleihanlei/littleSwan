@@ -1,0 +1,109 @@
+		<div id="banner">
+			<ul class="picture">
+				<li class="current">
+					<a href="#">
+						<img src="images/imgBanner/0.jpg" class="banner_img">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgBanner/1.jpg" class="banner_img">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgBanner/2.jpg" class="banner_img">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgBanner/3.jpg" class="banner_img">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgBanner/4.jpg" class="banner_img">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgBanner/5.jpg" class="banner_img">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgBanner/6.jpg" class="banner_img">
+					</a>
+				</li>
+			</ul>
+			<input type="button" id = "btn-previous" value="<">
+			<input type="button" id = "btn-next" value=">">
+			<ul class="show">
+				<li class="now"></li>
+				<li class="now"></li>
+				<li class="now"></li>
+				<li class="now"></li>
+				<li class="now"></li>
+				<li class="now"></li>
+				<li class="now"></li>
+			</ul>
+		</div>
+
+<script src="js/jQuery.js"></script> 
+ <script>
+	let index = 0;
+	let time;
+	function nextPage(next){
+		if(next){
+			if(index == 7){
+				index = 0;
+			}
+			else{
+				index++;
+			}
+		}
+		else{
+			if(index == -1){
+				index = 6;
+			}
+			else{
+				index--;
+			}
+		}
+		$(".picture li").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+		$(".show .now").eq(index).css({backgroundColor:"#fff"});
+		$(".show .now").eq(index).siblings().css({backgroundColor:"gray"}); 
+	}
+	
+	function move(){
+		clearInterval(time);
+		time = setInterval(function(){
+			nextPage(true);
+		},2000);
+	}
+	move();
+	$("#picture").mouseover(function(){
+		clearInterval(time);
+	})
+	
+	$("#picture").mouseout(function(){
+		move();
+	});
+	
+	$("#btn-previous").click(function(){
+	    nextPage(false);
+	    
+	});
+	$("#btn-next").click(function(){      
+	    nextPage(true);
+	});
+	
+	(function clickBtn(){
+		for(let i = 0; i < 7; i++){
+			$(".show .now").eq(i).click(function(){
+				index = i - 1;
+				nextPage(true);
+			});
+		}
+	})();
+</script>

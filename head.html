@@ -1,0 +1,217 @@
+		<!-- header 头部区域 -->
+		<div class="header">
+			<div class="inner safe">
+				<a href="homePage.html" class="logo"></a>
+				<div class="inner-left">
+					<ul class="show">
+						<li class="show-item">
+							<a href="#">全部商品</a>
+						</li>
+						<li class="show-item">
+							<a href="#">洗烘一体机</a>
+						</li>
+						<li class="show-item">
+							<a href="#">滚筒洗衣机</a>
+						</li>
+						<li class="show-item">
+							<a href="#">波轮洗衣机</a>
+						</li>
+						<li class="show-item">
+							<a href="#">干衣机</a>
+						</li>
+						<li class="show-item">
+							<a href="#">比佛利</a>
+						</li>
+					</ul>
+				</div>
+				<div class="inner-right">
+					<div class="search-left">
+						<form action="">
+							<input type="text" placeholder="滚筒水魔方" class="words">
+							<a href="#">
+								<i class="common"></i>
+							</a>
+						</form>
+					</div>
+					<div class="search-right">
+						<!-- <a href="#">
+							<i class="right01"></i>
+						</a> -->
+						<a src="" class="user01">
+							<img src="images/imgHead/user.png" class="user">
+						</a>
+						<div class="user02">
+							<ul class="list_01">
+								<li>
+									<a href="">我的订单</a>
+								</li>
+								<li>
+									<a href="">我的优惠券</a>
+								</li>
+								<li>
+									<a href="">账户设置</a>
+								</li>
+								<li class="logout">
+									<a >退出登录</a>
+								</li>
+							</ul>
+						</div>
+						<a  class="user04">
+							<i class="search-char"></i>
+							<span class="char-num">0</span>
+						</a>
+						<div class="user03">
+							<p>购物车中还没有商品,赶紧选购吧!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- secondLevel 二级菜单区域 -->
+		<div class="secondLevel">
+			<ul>
+				<li><img src="images/imgHead/x01.jpg" ></li>
+				<li><img src="images/imgHead/x02.jpg" ></li>
+				<li><img src="images/imgHead/x03.jpg" ></li>
+				<li><img src="images/imgHead/x04.jpg" ></li>
+				<li><img src="images/imgHead/x05.jpg" ></li>
+				<li><img src="images/imgHead/x06.jpg" ></li>
+			</ul>
+			<ul>
+				<li><img src="images/imgHead/g01.jpg" ></li>
+				<li><img src="images/imgHead/g02.jpg" ></li>
+				<li><img src="images/imgHead/g03.jpg" ></li>
+				<li><img src="images/imgHead/g04.jpg" ></li>
+				<li><img src="images/imgHead/g05.jpg" ></li>
+				<li><img src="images/imgHead/g06.jpg" ></li>
+			</ul>
+			<ul>
+				<li><img src="images/imgHead/b01.jpg" ></li>
+				<li><img src="images/imgHead/b02.jpg" ></li>
+				<li><img src="images/imgHead/b03.jpg" ></li>
+				<li><img src="images/imgHead/b04.jpg" ></li>
+				<li><img src="images/imgHead/b05.jpg" ></li>
+				<li><img src="images/imgHead/b06.jpg" ></li>
+			</ul>
+			<ul>
+				<li><img src="images/imgHead/gyj01.jpg" ></li>
+				<li><img src="images/imgHead/gyj02.jpg" ></li>
+				<li><img src="images/imgHead/gyj03.jpg" ></li>
+				<li><img src="images/imgHead/gyj04.jpg" ></li>
+				<li><img src="images/imgHead/gyj05.jpg" ></li>
+			</ul>
+			<ul>
+				<li><img src="images/imgHead/bfl01.jpg" ></li>
+				<li><img src="images/imgHead/bfl02.jpg" ></li>
+				<li><img src="images/imgHead/bfl03.jpg" ></li>
+				<li><img src="images/imgHead/bfl04.jpg" ></li>
+				<li><img src="images/imgHead/bfl05.jpg" ></li>
+				<li><img src="images/imgHead/bfl06.jpg" ></li>
+			</ul>
+		</div>
+		<!-- notice 公告区域 -->
+		<div id="notice">
+			【通知】不同机器发货仓库不同，具体时效可咨询客服，实际时效以实际物流为准，敬请谅解！
+		</div>
+		
+<script src="js/jQuery.js"></script>
+<script>
+	$(function(){
+		let login = JSON.parse(localStorage.getItem("login"));
+		// 点击首页用户标签，判断当前是否已登录账号
+		$(".user01").click(function(){
+			if(login == 1){
+				$(location).prop('href','person.html');
+			}
+			else{
+				$(location).prop('href','login.html');
+			}
+		});
+		// 点击首页购物车页面，判断当前是否已登录账号
+		$(".user04").click(function(){
+			if(login == 1){
+				$(location).prop('href','shoppingChat.html');
+			}
+			else{
+				$(location).prop('href','login.html');
+			}
+		});
+	});
+</script>
+<!-- 商品二级菜单js代码 -->
+<script>
+	$(function(){
+		for(let i = 1; i < 6; i++){
+			$(".show-item").eq(i).mouseover(function(){
+				$(".show-item a").eq(i).css({color:"skyblue"});
+				$(".secondLevel ul").eq(i-1).siblings().css({display:"none"});
+				$(".secondLevel ul").eq(i-1).stop().slideDown(500);
+				$(".secondLevel ul").eq(i-1).mouseover(function(){
+					$(".secondLevel ul").eq(i-1).stop();
+				});
+				$(".secondLevel ul").eq(i-1).mouseout(function(){
+					$(".secondLevel ul").eq(i-1).stop().slideUp(500);
+				});
+			});
+			$(".show-item").eq(i).mouseout(function(){
+				$(".show-item a").eq(i).css({color:"#000"});
+				$(".secondLevel ul").eq(i-1).stop().slideUp(500);
+			});
+			
+		}
+		$(".show-item").eq(0).mouseover(function(){
+			$(".show-item a").eq(0).css({color:"skyblue"});
+		});
+		$(".show-item").eq(0).mouseout(function(){
+			$(".show-item a").eq(0).css({color:"#000"});
+		});
+	});
+</script>
+<!-- 头部区域右边二级菜单代码 -->
+<script>
+	$(function(){
+		$(".user01").eq(0).mouseenter(function(){
+			$(".list_01").css({display:"block"});
+			$(".list_01").eq(0).mouseenter(function(){
+				$(".list_01").eq(0).css({display:"block"});
+			});
+		});
+		$(".user01").eq(0).mouseleave(function(){
+			$(".list_01").eq(0).css({display:"none"});
+			$(".list_01").eq(0).mouseleave(function(){
+				$(".list_01").eq(0).css({display:"none"});
+			});
+		});
+		
+		for(let i = 0; i < 4; i++){
+			$(".list_01 li").eq(i).mouseover(function(){
+				$(".list_01 li a").eq(i).css({color:"#00BFFF"});
+
+			});
+			$(".list_01 li").eq(i).mouseout(function(){
+				$(".list_01 li a").eq(i).css({color:"#rgb(153, 153, 153)"});
+			});
+		}
+		
+		$(".user04").eq(0).mouseenter(function(){
+			$(".user03").css({display:"block"});
+			$(".user03").eq(0).mouseenter(function(){
+				$(".user03").eq(0).css({display:"block"});
+			});
+			
+		});
+		$(".user03").eq(0).mouseleave(function(){
+			$(".user03").eq(0).css({display:"none"});
+			$(".user04").eq(0).mouseleave(function(){
+				$(".user03").eq(0).css({display:"none"});
+			});
+		});
+		
+		// 点击退出登录按钮消除localStorage
+		let ls = localStorage;
+		$(".logout").click(function(){
+			console.log(ls.login);
+			ls.clear();
+		});
+	});
+</script>
